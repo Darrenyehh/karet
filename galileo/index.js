@@ -29,10 +29,6 @@ app.use(session({
     cookie:{}
 }))
 
-const configuration = new Configuration({
-    apiKey: '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'
-})
-
 const openai = new OpenAIApi(configuration)
 
 app.post('/bot', async(req,res)=>{
